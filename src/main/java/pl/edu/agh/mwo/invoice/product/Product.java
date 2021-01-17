@@ -10,7 +10,7 @@ public abstract class Product {
     private final BigDecimal taxPercent;
 
     protected Product(String name, BigDecimal price, BigDecimal tax) {
-    	if (name == null || name.equals("") || tax == null) {
+    	if (name == null || name.equals("")) {
     		throw new IllegalArgumentException("Name cannot be null or empty");
     	}
     	
