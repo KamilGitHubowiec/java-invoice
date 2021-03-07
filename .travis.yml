@@ -1,8 +1,8 @@
 language: java
-env:
-  global:
-    - CODECOV_TOKEN=:"b8a80789-2f09-44df-8099-28e64332be79"
 script: 
  - mvn test
  after_success:
  - bash <(curl -s https://codecov.io/bash)
+ env:
+  global:
+    - CODECOV_TOKEN=:"b8a80789-2f09-44df-8099-28e64332be79"
