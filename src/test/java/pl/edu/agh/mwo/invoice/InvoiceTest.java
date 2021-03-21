@@ -111,15 +111,15 @@ public class InvoiceTest {
     	Assert.assertTrue(number > 0);
     }
     
-//	@Test
-//	public void testTwoInvoicesHaveDifferentNumber() {
-//		int number = invoice.getNumber();
-//		int number2 = new Invoice().getNumber();
-//		Assert.assertNotEquals(number, number2);
-//	}
+	@Test
+	public void testTwoInvoicesHaveDifferentNumber() {
+		int number = invoice.getNumber();
+		int number2 = new Invoice().getNumber();
+		Assert.assertNotEquals(number, number2);
+	}
 	
-//	@Test
-//	public void testTheSameInvoiceHasTheSameNumber() {
-//		Assert.assertNotEquals(invoice.getNumber(), invoice.getNumber());
-//	}
+	@Test
+	public void testTheSameInvoiceHasTheSameNumber() {
+		Assert.assertEquals(invoice.getNumber(), invoice.getNumber());
+	}
 }
